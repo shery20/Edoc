@@ -13,5 +13,7 @@ app
         } else {
             res.sendfile('public/main.html');
         }
-    })
-    .listen(8080);
+    });
+    var port= (process.env.PORT || 3000);
+
+    app.listen(port);
